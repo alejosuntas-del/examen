@@ -1,6 +1,6 @@
 /* EXAMEN SEGUNDO PARCIAL - DESARROLLO WEB I
-   Estudiante: __________________________
-   Curso: _______________________________
+   Estudiante: David Simbaña y Alejandro Suntasig
+   Curso: 2do Nivel
 
    INSTRUCCIONES: Implementar aquí TODO el CSS.
    No modificar la estructura HTML ni los nombres de las clases.
@@ -15,6 +15,11 @@
    8. Footer
    9. Media queries: tablet <= 900px; móvil <= 600px
 */
+
+/*-------------------------------------------
+  CAMBIOS REALIZADOS POR ALEJANDRO SUNTASIG
+-------------------------------------------*/
+
 /* unifica el modelo de caja  */
     *{
       box-sizing: border-box;
@@ -58,7 +63,7 @@ a{
  /*estilos de la etiqueta */
 .etiqueta{
    display: inline-block;
-   font-size: ;
+   font-size: 14 px;
    font-weight: 600;
    color:#2563eb ;
    background-color: #eff6ff;
@@ -179,3 +184,209 @@ a{
    color: #cbd5e1;
    margin-bottom: 32px;
 }
+
+/*-------------------------------------------
+  CAMBIOS REALIZADOS POR DAVID SIMBAÑA
+-------------------------------------------*/
+
+/* Contenedor de los botones de acción del hero en línea */
+.hero-acciones {
+   display: flex;
+   gap: 16px;
+}
+
+/* Contenedor de la imagen principal del hero */
+.hero-imagen {
+   flex: 1;
+}
+
+.hero-imagen img {
+   border-radius: 12px;
+}
+
+/* Sección del catálogo de vehículos con fondo contrastado */
+.catalogo {
+   background-color: #f8fafc;
+}
+
+/* Cabecera interna del catálogo */
+.seccion-encabezado {
+   text-align: center;
+   max-width: 600px;
+   margin: 0 auto 48px auto;
+}
+
+.seccion-encabezado h2 {
+   font-size: 36px;
+   font-weight: 700;
+   color: #0f172a;
+   margin-bottom: 8px;
+}
+
+.seccion-encabezado p {
+   color: #64748b;
+}
+
+/* Cuadrícula CSS Grid estricta de 3 columnas para las fichas de vehículos en PC */
+.vehiculos-grid {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 32px;
+}
+
+/* Estructura de la tarjeta individual de cada vehículo */
+.vehiculo-card {
+   background-color: #ffffff;
+   border-radius: 12px;
+   overflow: hidden;
+   border: 1px solid #e2e8f0;
+   display: flex;
+   flex-direction: column;
+}
+
+/* Efecto hover interactivo con sombra suave al pasar el cursor */
+.vehiculo-card:hover {
+   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen del vehículo dentro de su tarjeta */
+.vehiculo-card img {
+   width: 100%;
+   height: 220px;
+   object-fit: cover;
+}
+
+/* Contenedor de información interna de la tarjeta */
+.vehiculo-info {
+   padding: 24px;
+   display: flex;
+   flex-direction: column;
+   flex-grow: 1;
+}
+
+/* Etiqueta del año de fabricación del auto */
+.vehiculo-anio {
+   font-size: 14px;
+   font-weight: 600;
+   color: #2563eb;
+   text-transform: uppercase;
+}
+
+/* Nombre o modelo del vehículo */
+.vehiculo-info h3 {
+   font-size: 20px;
+   font-weight: 700;
+   color: #0f172a;
+   margin: 4px 0;
+}
+
+/* Precio destacado del vehículo */
+.vehiculo-precio {
+   font-size: 22px;
+   font-weight: 800;
+   color: #0f172a;
+   margin-bottom: 16px;
+}
+
+/* Lista de detalles técnicos en línea */
+.vehiculo-detalles {
+   display: flex;
+   gap: 12px;
+   margin-bottom: 20px;
+   flex-wrap: wrap;
+}
+
+.vehiculo-detalles li {
+   font-size: 14px;
+   background-color: #f8fafc;
+   padding: 4px 8px;
+   border-radius: 4px;
+   color: #64748b;
+}
+
+/* Empuja el botón al fondo de la tarjeta */
+.vehiculo-info .boton {
+   margin-top: auto;
+}
+
+/* Distribución fija en dos columnas paralelas para la sección institucional ("Nosotros") */
+.nosotros-grid {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 64px;
+   align-items: center;
+}
+
+/* Textos de la sección institucional */
+.nosotros-texto h2 {
+   font-size: 36px;
+   font-weight: 700;
+   color: #0f172a;
+   margin-bottom: 16px;
+}
+
+.nosotros-texto p {
+   color: #64748b;
+   margin-bottom: 16px;
+}
+
+.nosotros-texto .boton {
+   margin-top: 16px;
+}
+
+/* Cuadrícula fija de 2 columnas para mostrar los beneficios en formato escritorio */
+.beneficios-grid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 24px;
+}
+
+/* Tarjeta individual de beneficio */
+.beneficio {
+   background-color: #f8fafc;
+   padding: 24px;
+   border-radius: 12px;
+}
+
+/* Contenedor del icono ilustrativo del beneficio */
+.beneficio-icono {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   width: 40px;
+   height: 40px;
+   background-color: #dbeafe;
+   color: #2563eb;
+   border-radius: 8px;
+   font-weight: bold;
+   margin-bottom: 12px;
+}
+
+.beneficio h3 {
+   font-size: 16px;
+   font-weight: 700;
+   color: #0f172a;
+   margin-bottom: 4px;
+}
+
+.beneficio p {
+   font-size: 14px;
+   color: #64748b;
+}
+
+/* Sección de contacto */
+.contacto {
+   background-color: #f8fafc;
+}
+
+/* Distribución fija en dos columnas para el texto informativo y el formulario en PC */
+.contacto-grid {
+   display: grid;
+   grid-template-columns: 1fr 1.2fr;
+   gap: 64px;
+   align-items: start;
+}
+
+/*-------------------------------------------
+  CAMBIOS REALIZADOS POR ALEJANDRO SUNTASIG
+-------------------------------------------*/
