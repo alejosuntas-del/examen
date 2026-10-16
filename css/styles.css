@@ -1,0 +1,181 @@
+/* EXAMEN SEGUNDO PARCIAL - DESARROLLO WEB I
+   Estudiante: __________________________
+   Curso: _______________________________
+
+   INSTRUCCIONES: Implementar aquí TODO el CSS.
+   No modificar la estructura HTML ni los nombres de las clases.
+
+   1. Estilos generales, tipografía y contenedor
+   2. Header y navegación (Flexbox)
+   3. Portada principal (Flexbox)
+   4. Catálogo de 6 vehículos (CSS Grid)
+   5. Tarjetas, botones, hover y sombras
+   6. Nosotros y beneficios (Grid / Flexbox)
+   7. Formulario y estados :focus
+   8. Footer
+   9. Media queries: tablet <= 900px; móvil <= 600px
+*/
+/* unifica el modelo de caja  */
+    *{
+      box-sizing: border-box;
+    }
+    /*body estilos
+    se cambia la tipoografia y el color del fondo de la pagina */
+body{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-color: white;
+   margin: 0;
+   padding: 0;
+}
+/*ajuste de imagenes*/
+img{
+   max-width: 100%;
+   height: auto;
+   display: block;
+}
+/*se quita los puntos que salen en la etriqueta */
+ul{
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+ /*se elimino el subrrayado*/
+a{
+   text-decoration: none;
+   color: inherit;
+}
+ /*limita el ancho maximo de las secciones */
+.contenedor{
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 24px;
+}
+ /*se le da espacio a las secciones de la pagina de un aforma vertical*/
+.seccion{
+   padding: 64px 0;
+   
+}
+ /*estilos de la etiqueta */
+.etiqueta{
+   display: inline-block;
+   font-size: ;
+   font-weight: 600;
+   color:#2563eb ;
+   background-color: #eff6ff;
+   padding: 4px 12px;
+   border-radius: 50px;
+   margin-bottom: 16px;
+}
+ /*estilos para los botones
+ donde se le puso un fondo a cada uno y cuando se lo seleciona cambia de color */
+.boton{
+   display: inline-block;
+   padding: 12px 16px;
+   font-weight: 600;
+   border-radius: 8px;
+   text-align: center;
+   cursor: pointer;
+   border: none;
+}
+
+.boton-principal{
+   background-color: #2563eb;
+   color: #ffffff;
+}
+
+.boton-principal:hover{
+   background-color:#1d4ed8;
+
+}
+.boton-claro{
+   background-color: gray;
+   color: #ffffff;
+   border: 1px solid dimgrey;
+}
+.boton-claro:hover{
+   background-color: rgb(80, 78, 78);
+}
+.boton-secundario{
+   background-color: #1d4ed8;
+   color: #ffffff;
+   width: 100%;
+}
+
+.boton-secundario:hover{
+   background-color:#f1f5f9;
+   color: #0f172a;
+   width: 100%;
+}
+ /*navegacion principal*/
+.encabezado{
+   position: sticky;
+   top: 0;
+   background-color:#ffffff;
+   border-bottom: 1px solid #e2e8f0;
+   z-index: 100%;
+}
+ /*alinea la marca y el menu y el boton */
+.encabezado-contenido{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 80px;
+}
+ /*ajuste del logotipo */
+.marca img{
+   border-radius: 4px;
+}
+ /*navegacion horizontal*/
+.menu{
+   display: flex;
+   gap: 32px;   
+}
+ /*enlasesd el menu */
+.menu a{
+   font-weight: 500;
+   color:#334155;
+}
+.menu a:hover{
+   color: #2563eb;
+
+}
+ /*ajuste del boton especifico*/
+.boton-cabezera{
+   padding: 8px 20px;
+   font-size: 15px;
+ 
+}
+ /*portada*/
+.hero{
+   background-color: #0f172a;
+   color: #ffffff;
+   padding: 80px 0;
+}
+ /*distribucion en dos columnas*/
+.hero-contenido{
+   display: flex;
+   align-items: center;
+   gap: 48px;
+   justify-content: space-between;
+}
+ /*texto descriptivo*/
+.hero-texto{
+   flex: 1;
+}
+ /*variacion de color */
+.hero-texto .etiqueta{
+   background-color: rgba(37, 99, 235, 0,2);
+   color: #60a5fa;
+}
+ /*titulo primncipal */
+.hero-texto h1{
+   font-size: 48px;
+   font-weight: 800;
+   line-height: 1.2;
+   margin-bottom: 20px;
+}
+.hero-texto p{
+   font-size: 18px;
+   color: #cbd5e1;
+   margin-bottom: 32px;
+}
