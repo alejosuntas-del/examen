@@ -172,7 +172,7 @@ a{
    background-color: rgba(37, 99, 235, 0,2);
    color: #60a5fa;
 }
- /*titulo primncipal */
+ /*titulo principal */
 .hero-texto h1{
    font-size: 48px;
    font-weight: 800;
@@ -227,7 +227,7 @@ a{
    color: #64748b;
 }
 
-/* Cuadrícula CSS Grid estricta de 3 columnas para las fichas de vehículos en PC */
+/* Cuadrícula CSS Grid estricta de 3 columnas para las fichas de vehículos */
 .vehiculos-grid {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
@@ -379,7 +379,7 @@ a{
    background-color: #f8fafc;
 }
 
-/* Distribución fija en dos columnas para el texto informativo y el formulario en PC */
+/* Distribución fija en dos columnas para el texto informativo y el formulario*/
 .contacto-grid {
    display: grid;
    grid-template-columns: 1fr 1.2fr;
@@ -390,3 +390,147 @@ a{
 /*-------------------------------------------
   CAMBIOS REALIZADOS POR ALEJANDRO SUNTASIG
 -------------------------------------------*/
+.contacto-texto h2 {
+   font-size: 36px;
+   font-weight: 700;
+   color: #0f172a;
+   margin-bottom: 16px;
+}
+
+.contacto-texto p {
+   color: #64748b;
+   margin-bottom: 12px;
+}
+
+.contacto-texto p strong {
+   color: #0f172a;
+}
+
+/* Tarjeta contenedora del formulario */
+.formulario {
+   background-color: #ffffff;
+   padding: 40px;
+   border-radius: 16px;
+   border: 1px solid #e2e8f0;
+}
+
+/* Fila para alinear campos de nombre y teléfono en paralelo (dos columnas) */
+.formulario-fila {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 16px;
+}
+
+/* Contenedor de cada campo individual */
+.campo {
+   margin-bottom: 20px;
+}
+
+.campo label {
+   display: block;
+   font-size: 14px;
+   font-weight: 600;
+   color: #0f172a;
+   margin-bottom: 8px;
+}
+
+/* Estilos para inputs, select y textarea */
+.campo input,
+.campo select,
+.campo textarea {
+   width: 100%;
+   padding: 12px 16px;
+   border: 1px solid #e2e8f0;
+   border-radius: 8px;
+   font-family: inherit;
+   font-size: 15px;
+   color: #334155;
+   background-color: #ffffff;
+}
+
+/* Estado :focus obligatorio para realce y accesibilidad */
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+   outline: none;
+   border-color: #2563eb;
+   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Contenedor del checkbox de aceptación de privacidad */
+.aceptacion {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   font-size: 14px;
+   color: #64748b;
+   margin-bottom: 24px;
+   cursor: pointer;
+}
+
+.aceptacion input[type="checkbox"] {
+   width: 16px;
+   height: 16px;
+   accent-color: #2563eb;
+}
+
+/* Botón de envío adaptado al ancho del contenedor */
+.boton-enviar {
+   width: 100%;
+}
+
+/* Pie de página con fondo oscuro */
+.pie-pagina {
+   background-color: #0f172a;
+   color: #ffffff;
+   padding: 64px 0 32px 0;
+}
+
+/* Cuadrícula fija de 3 columnas para organizar los bloques del footer*/
+.pie-grid {
+   display: grid;
+   grid-template-columns: 2fr 1fr 1fr;
+   gap: 48px;
+   margin-bottom: 48px;
+}
+
+.pie-grid h2 {
+   font-size: 24px;
+   margin-bottom: 12px;
+}
+
+.pie-grid h3 {
+   font-size: 18px;
+   margin-bottom: 16px;
+   color: #e2e8f0;
+}
+
+.pie-grid p {
+   color: #94a3b8;
+   font-size: 15px;
+}
+
+.pie-grid ul li {
+   margin-bottom: 8px;
+}
+
+.pie-grid ul li a {
+   color: #94a3b8;
+   font-size: 15px;
+}
+
+.pie-grid ul li a:hover {
+   color: #ffffff;
+}
+
+/* Franja inferior de derechos de autor*/
+.pie-inferior {
+   border-top: 1px solid #1e293b;
+   padding-top: 24px;
+   text-align: center;
+}
+
+.pie-inferior p {
+   color: #64748b;
+   font-size: 14px;
+}
